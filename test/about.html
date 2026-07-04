@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Dhruv Hooda</title>
+    <meta name="description" content="Meet Dhruv Hooda, a website developer focused on modern frontend, responsive UX, and immersive web experiences." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-page="about">
+    <canvas id="spaceCanvas" aria-hidden="true"></canvas>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="topbar">
+      <a class="brand" href="index.html"><span class="brand-mark">DH</span><span><strong>Dhruv Hooda</strong><small>Web Developer</small></span></a>
+      <button class="menu-btn" type="button" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html">Home</a><a class="active" href="about.html">About</a><a href="personal.html">Personal</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="lab.html">3D Lab</a><a href="process.html">Process</a><a href="contact.html">Contact</a>
+      </nav>
+      <a class="nav-cta" href="contact.html">Start a Build</a>
+    </header>
+    <main>
+      <section class="about-hero page-section">
+        <div class="subhero reveal">
+          <p class="eyebrow">About me</p>
+          <h1>I design and code websites that look professional and feel easy to use.</h1>
+          <p>I'm a B.Tech third-year student from Delhi and a website developer focused on modern layouts, responsive UI, smooth animation, and practical frontend builds. My goal is simple: make the first impression strong and make the experience reliable.</p>
+        </div>
+        <figure class="profile-frame reveal">
+          <img src="assets/profile.jpg" alt="Portrait of Dhruv Hooda" />
+          <figcaption>
+            <strong>Dhruv Hooda</strong>
+            <span>B.Tech Student / Website Developer</span>
+          </figcaption>
+        </figure>
+      </section>
+      <section class="page-section about-grid">
+        <article class="bio-panel reveal">
+          <h2>Builder mindset, designer taste.</h2>
+          <p>I work across layout, interactions, responsive UI, animations, and deployment-ready static sites while continuing my B.Tech journey. I like bold interfaces, clean code, and web experiences that feel crafted instead of copied.</p>
+          <p>For clients, that means less confusion and more momentum: a site that explains the offer, looks premium, and gives visitors a reason to stay.</p>
+        </article>
+        <div class="stack-panel reveal">
+          <h3>Core toolkit</h3>
+          <div class="pill-cloud">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Three.js</span><span>Responsive UI</span><span>Animations</span><span>SEO Basics</span><span>Forms</span><span>Performance</span>
+          </div>
+        </div>
+      </section>
+      <section class="page-section resume-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Professional focus</p>
+          <h2>What I bring to a project</h2>
+        </div>
+        <div class="resume-grid">
+          <article class="resume-card reveal"><span>01</span><h3>Frontend Development</h3><p>Semantic HTML, scalable CSS, JavaScript interactions, clean sections, and browser-friendly builds.</p></article>
+          <article class="resume-card reveal"><span>02</span><h3>Visual Direction</h3><p>Color, typography, spacing, and motion choices that make the site feel premium and consistent.</p></article>
+          <article class="resume-card reveal"><span>03</span><h3>3D Experience</h3><p>Three.js backgrounds and interactive elements that add depth without making the site hard to use.</p></article>
+          <article class="resume-card reveal"><span>04</span><h3>Launch Readiness</h3><p>SEO basics, contact forms, responsive checks, page structure, and final polish before sharing.</p></article>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"><p>&copy; <span id="year"></span> Dhruv Hooda.</p><div class="footer-socials"><a href="https://www.linkedin.com/in/hoodadhruv/" target="_blank" rel="noreferrer">LinkedIn</a><a href="https://www.instagram.com/dhruvhooda22/" target="_blank" rel="noreferrer">Instagram</a><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a><a href="services.html">Services</a></div></footer>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

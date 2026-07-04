@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Lab | Dhruv Hooda</title>
+    <meta name="description" content="A 3D web lab showing interactive interface concepts and immersive website ideas." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-page="lab">
+    <canvas id="spaceCanvas" aria-hidden="true"></canvas><div class="noise" aria-hidden="true"></div>
+    <header class="topbar">
+      <a class="brand" href="index.html"><span class="brand-mark">DH</span><span><strong>Dhruv Hooda</strong><small>Web Developer</small></span></a>
+      <button class="menu-btn" type="button" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="personal.html">Personal</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a class="active" href="lab.html">3D Lab</a><a href="process.html">Process</a><a href="contact.html">Contact</a>
+      </nav>
+      <a class="nav-cta" href="contact.html">Start a Build</a>
+    </header>
+    <main>
+      <section class="lab-hero page-section reveal">
+        <p class="eyebrow">Interactive 3D layer</p>
+        <h1>Move your cursor. The interface bends around you.</h1>
+        <p>This page uses the shared Three.js scene as a full-bleed visual system: orbiting geometry, particles, pointer motion, and glass UI layered over it.</p>
+      </section>
+      <section class="page-section lab-grid">
+        <article class="lab-card reveal"><h2>Orbit UI</h2><p>Floating panels and 3D geometry for futuristic landing pages.</p></article>
+        <article class="lab-card reveal"><h2>Motion Identity</h2><p>Animation direction that makes a simple brand feel bigger.</p></article>
+        <article class="lab-card reveal"><h2>Scroll Worlds</h2><p>Sections can trigger camera movement, color shifts, and reveals.</p></article>
+      </section>
+      <section class="page-section tech-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Technical notes</p>
+          <h2>3D should add depth while keeping the site usable.</h2>
+        </div>
+        <div class="tech-list">
+          <article class="tech-row reveal"><strong>Pointer motion</strong><span>Subtle cursor response makes the interface feel interactive without hurting readability.</span></article>
+          <article class="tech-row reveal"><strong>Responsive fallback</strong><span>The layout stays clean on smaller screens and keeps the main content first.</span></article>
+          <article class="tech-row reveal"><strong>Performance balance</strong><span>Effects are built with practical limits so the page still feels smooth.</span></article>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"><p>&copy; <span id="year"></span> Dhruv Hooda.</p><div class="footer-socials"><a href="https://www.linkedin.com/in/hoodadhruv/" target="_blank" rel="noreferrer">LinkedIn</a><a href="https://www.instagram.com/dhruvhooda22/" target="_blank" rel="noreferrer">Instagram</a><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a><a href="process.html">Process</a></div></footer>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
